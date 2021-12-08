@@ -8,17 +8,22 @@
     <script src="index.js" defer></script>
     <title>APP Clima v1.0</title>
 </head>
-<body>
+<body onload="CargaCiudades()">
     <div class="container container-add">
         <div class="container-city">
             <p>Ciudad:</p>
-            <select name="eleccion-ciudad" id="eleccion-ciudad">
-                <option></option>
-              </select>
+            <select name="ciudad" id="ciudad" onchange="ApiClima()">
+                <option disabled selected value="0"> -- Seleccione una opción -- </option>
+            </select>
         </div>
         <div class="container-city-save">
-            <button type="button" onclick="CargaCiudades()">Guardar ciudad</button>
+            <button type="button"><a href="index.html">Volver</a></button>
         </div>
     </div> 
+    <div class="container container-add">
+        <h1 id="name"></h1>
+        <p id="temp"></p>
+        <p id="desc"></p>
+    </div>
 </body>
 </html>
