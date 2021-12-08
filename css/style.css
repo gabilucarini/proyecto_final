@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    max-height: 100vh;
+    background: url("../img/background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    height: 150px;
+    width: 400px;
+    background: rgba(141, 141, 141, 0.384);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo{
+    object-fit: cover;
+    display: flex;
+    flex-basis: 50%;
+}
+
+.container-logo img{
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+
+}
+
+.container-buttons button{
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.container-buttons button a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-add{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-city{
+    display: flex;
+    padding: 10px;
+}
+
+.container-city input{
+    margin-left: 10px;
+}
+
+.container-city-save button{
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
