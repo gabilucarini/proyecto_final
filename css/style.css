@@ -10,7 +10,7 @@
 body{
     height: 100vh;
     max-height: 100vh;
-    background: url("../img/background.jpg");
+    background: url("../img/background3.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ body{
 .container{
     height: 150px;
     width: 400px;
-    background: rgba(141, 141, 141, 0.384);
+    background: rgba(141, 141, 141, 0.616);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -84,4 +84,16 @@ body{
 .container-city-save button a{
     color: inherit;
     text-decoration: none;
+}
+
+.msj-exitoso{
+    margin-top: 10px;
+}
+
+#loadingp{
+    display: none;
+}
+
+.add{
+    height: 250px;
 }
