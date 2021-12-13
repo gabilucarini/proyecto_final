@@ -12,9 +12,9 @@
     <div class="container container-add">
         <div class="container-city">
             <p>Ciudad:</p>
-            <select name="ciudad" id="ciudad" onchange="ApiClima()">
-                <option disabled selected value="0"> -- Seleccione una opción -- </option>
-            </select>
+                <select class="select-css" name="ciudad" id="ciudad" onchange="ApiClima()">
+                    <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                </select>
         </div>
         <div class="container-city-save">
             <button type="button"><a href="index.html">Volver</a></button>
@@ -24,13 +24,17 @@
         <div>
             <p id="loadingp">CARGANDO....</p>
         </div>
-        <div>
-            <h1 id="name"></h1>
-            <p id="temp"></p>
-            <p id="temp-max"></p>
-            <p id="temp-min"></p>
-            <p id="desc"></p>
-        </div>
+        <div class="resultado">
+            <div class="resultado-name-img">
+                <img id="img" src="" alt="">
+                <h1 id="name"></h1>
+            </div>
+            <div class="resultados">            
+                <p id="temp"></p>
+                <p id="temp-max"></p>
+                <p id="temp-min"></p>
+                <p id="desc"></p></div>
+            </div>
     </div>
 </body>
 </html>

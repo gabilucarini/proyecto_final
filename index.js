@@ -8,6 +8,7 @@ let nombre = document.getElementById('name');
 let desc = document.getElementById('desc');
 let msj = document.getElementById('msj');
 let loading = document.getElementById('loadingp');
+let img = document.getElementById("img")
 
 
 
@@ -48,6 +49,7 @@ function ApiClima(){
         var tempminValue = data['main']['temp_min'];
         var nameValue = data['name'];
         var descValue = data['weather'][0]['description'];
+        var iconValue = data['weather'][0]['icon'];
 
 
         loading.style.display = "none";
@@ -55,10 +57,11 @@ function ApiClima(){
         tempminValue = (tempminValue - 273.15);
         tempValue = (tempValue - 273.15);
         nombre.innerHTML = nameValue;
-        max.innerHTML = "Temperatura maxima - "+tempmaxValue.toFixed(2);
-        min.innerHTML = "Temperatura minima - "+tempminValue.toFixed(2);
-        desc.innerHTML = "Descripcion - "+descValue;
-        temp.innerHTML = "Temperatura - "+tempValue.toFixed(2);
+        img.src = "http://openweathermap.org/img/wn/"+iconValue+"@2x.png"
+        max.innerHTML = "Temperatura maxima : "+tempmaxValue.toFixed(0)+" °C";
+        min.innerHTML = "Temperatura minima : "+tempminValue.toFixed(0)+" °C";
+        desc.innerHTML = "Descripcion : "+descValue;
+        temp.innerHTML = "Temperatura : "+tempValue.toFixed(0)+" °C";
 
 
     })
